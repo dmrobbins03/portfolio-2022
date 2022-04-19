@@ -96,8 +96,6 @@ for (const group of groups) {
 // filter detail pages not already in groups
 const remainingItems = S.documentTypeListItems().filter(dashboardHiddenTypes);
 
-console.log(remainingItems);
-
 // build admin structure
 let baseList = [];
 const pageSingletonItems = [

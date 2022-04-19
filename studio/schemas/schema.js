@@ -12,11 +12,11 @@ import { references } from './references';
 import { settingsModules, settingsSingletons } from './settings';
 
 // Organize Imports for Desk Structure
-export const singletons = [...documentSingletonPages];
+export const singletons = [...documentSingletonPages, ...settingsSingletons];
 export const singletonTemplateIds = singletons.map((a) => a.name);
 
 // Admin controls (not pages) are visually up higher, followed by landing pages, then detail pages
-export const adminSingletons = [settingsSingletons];
+export const adminSingletons = [...settingsSingletons];
 export const adminSingletonTemplateIds = adminSingletons.map((a) => a.name);
 
 // References that should not be accessed as pages (such as an author object)

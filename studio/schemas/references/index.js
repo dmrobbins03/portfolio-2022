@@ -1,5 +1,6 @@
 // Non-Page Reference Document Templates
 
-import project from './project';
+import award from './award';
+import technology from './technology';
 
-export const references = [project];
+export const references = [award, technology];
